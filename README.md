@@ -79,7 +79,11 @@ Reglas de Validación
 
 ## **5 Scripts de Python**
 ### **5.1 Main Script**
-Ejecución de main.py:python main.py
+
+Ejecución de main.py:
+```bash
+python main.py
+```
 
 ## **6. Pruebas**
 ### **6.1. Ejecución de Pruebas Unitarias**
