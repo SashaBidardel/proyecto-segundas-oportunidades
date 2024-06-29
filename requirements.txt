@@ -1,0 +1,4 @@
+pytest
+pandas
+simple_salesforce
+mysql-connector-python
