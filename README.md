@@ -2,7 +2,7 @@
 
 ## **1. Descripción del Proyecto**
 
-El objetivo de este proyecto es gestionar productos usados y sus respectivas oportunidades de venta en Salesforce. Se realiza una carga de registros aleatorios de productos usados, se actualizan y calculan beneficios, y se generan reportes en formato Excel. Además, se gestionan las ventas y se aplican validaciones específicas sobre los datos.
+El objetivo de este proyecto es gestionar productos usados y sus respectivas oportunidades de venta en Salesforce. Se pide un año fiscal desde la api de python que simula a la agencia tributaria y se obtienen los datos de la org de salesforce en donde están los usuarios de la aplicación Segunda Oportunidad, se actualizan y calculan beneficios, y se generan reportes en formato Excel. Además, se gestionan las ventas y se aplican validaciones específicas sobre los datos.
 
 ## **2. Requisitos**
 
