@@ -24,17 +24,17 @@ El objetivo de este proyecto es gestionar productos usados y sus respectivas opo
 
 ## **3. Configuración del Entorno**
 
-### **3.1. Creación del Entorno Virtual
+### **3.1. Creación del Entorno Virtual**
 
 bash
 python -m venv venv
 source venv/bin/activate (En Windows: venv\Scripts\activate)
 
-### **3.2. Instalación de Dependencias
+### **3.2. Instalación de Dependencias**
 
 pip install -r requirements.txt
 
-### **3.3. Variables de Conexión
+### **3.3. Variables de Conexión**
 
 USERNAME=tu_usuario_salesforce
 PASSWORD=tu_contraseña_salesforce
@@ -44,11 +44,12 @@ DB_HOST=tu_host_mysql
 DB_PASSWORD=tu_contraseña_mysql
 DB_NAME=nombre_base_datos
 
-## **4. Implementación
-### **4.1. Configuración de Salesforce
-### **4.1.1. Triggers y Validaciones
+## **4. Implementación**
+### **4.1. Configuración de Salesforce**
+### **4.1.1. Triggers y Validaciones**
 
 Trigger: UpdateVentaField:
+```python
     trigger UpdateVentaField on Producto_Usado__c (before insert, before update) {
     for (Producto_Usado__c producto : Trigger.new) {
         if (producto.Fecha_Venta__c != null) {
@@ -68,22 +69,22 @@ Trigger: UpdateVentaField:
         }
     }
 }
-
+```
 Reglas de Validación
 
     DNI y Email obligatorios en Segunda_Oportunidad__c:
     AND(ISBLANK(DNI__c), ISBLANK(Email__c))
 
-### **5.2. Scripts de Python
-### **5.2.1. Main Script
+## **5 Scripts de Python**
+### **5.1 Main Script**
 Ejecución de main.py:python main.py
 
-## **6. Pruebas
-### **6.1. Ejecución de Pruebas Unitarias
+## **6. Pruebas**
+### **6.1. Ejecución de Pruebas Unitarias**
 Para ejecutar las pruebas unitarias, utilice el siguiente comando:pytest tests/
 
-## **7. Generación de Reportes
-### **7.1. Generación de Excel
+## **7. Generación de Reportes**
+### **7.1. Generación de Excel**
 El script principal genera un archivo Excel con los datos de usuarios y beneficios calculados:
 
 
