@@ -2,7 +2,7 @@
 
 ## **1. Descripción del Proyecto**
 
-El objetivo de este proyecto es poder desde la agencia tributaria pedir los datos fiscales de venta de un año determinado de una app de ventas de segunda mano(Segunda Oportunida)cuyos datos tenemos alojados en una org de Salesforce para ver los beneficios de ese año,si los hubiese,con su correspondiente carga fiscal(20% de los beneficios). 
+El objetivo de este proyecto es poder desde la agencia tributaria pedir los datos fiscales de venta de un año determinado de una app de ventas de segunda mano(Segunda Oportunida)cuyos datos tenemos alojados en una org de Salesforce para ver los beneficios de ese año,si los hubiese,con su correspondiente carga fiscal(20% de los beneficios). <br>
 Se pide un año fiscal desde la api de python que simula a la agencia tributaria y se obtienen los datos de la org de salesforce en donde están los usuarios de la aplicación Segunda Oportunidad, se actualizan y calculan beneficios, y se generan reportes en formato Excel. Además, se gestionan las ventas y se aplican validaciones específicas sobre los datos.
 
 ## **2. Requisitos**
