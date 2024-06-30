@@ -49,9 +49,9 @@ DB_NAME=nombre_base_datos
 ```
 ## **4. Implementación**
 ### **4.1. Configuración de Salesforce**
-### **4.1.1 Objetos Custom creados: **
+### **4.1.1 Objetos Custom creados:**
 #### **Objeto Producto_Usado__c en Salesforce**
-#### **El objeto Producto_Usado__c tiene los siguientes campos:**
+##### **El objeto Producto_Usado__c tiene los siguientes campos:**
  * CreatedById: Lookup(User)
  * Fecha_Venta__c: Date
  * LastModifiedById: Lookup(User)
@@ -63,8 +63,8 @@ DB_NAME=nombre_base_datos
  * Vendido__c: Checkbox
 
 
-### Objeto Segunda_Oportunidad__c en Salesforce
-#### El objeto Segunda_Oportunidad__c tiene los siguientes campos:
+#### Objeto Segunda_Oportunidad__c en Salesforce
+##### El objeto Segunda_Oportunidad__c tiene los siguientes campos:
 
 * CreatedById: Lookup(User)
 * DNI__c: Text(80) (Unique Case Insensitive)
