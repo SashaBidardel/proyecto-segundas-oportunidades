@@ -49,9 +49,9 @@ DB_NAME=nombre_base_datos
 ```
 ## **4. Implementación**
 ### **4.1. Configuración de Salesforce**
-
-### Objeto Producto_Usado__c en Salesforce
-#### El objeto Producto_Usado__c tiene los siguientes campos:
+### **4.1.1 Objetos Custom creados: **
+#### **Objeto Producto_Usado__c en Salesforce**
+#### **El objeto Producto_Usado__c tiene los siguientes campos:**
  * CreatedById: Lookup(User)
  * Fecha_Venta__c: Date
  * LastModifiedById: Lookup(User)
@@ -72,9 +72,9 @@ DB_NAME=nombre_base_datos
 * LastModifiedById: Lookup(User)
 * OwnerId: Lookup(User, Group)
 * Name: Text(80)
-### **4.1.1. Triggers y Validaciones**
+### **4.1.2. Triggers y Validaciones**
 
-Trigger: UpdateVentaField:
+#### **Trigger: UpdateVentaField:**
 ```java
     trigger UpdateVentaField on Producto_Usado__c (before insert, before update) {
     for (Producto_Usado__c producto : Trigger.new) {
@@ -97,7 +97,7 @@ Trigger: UpdateVentaField:
 }
 ```
 
-Reglas de Validación
+#### **Reglas de Validación:**
 
     DNI y Email obligatorios en Segunda_Oportunidad__c:
     AND(ISBLANK(DNI__c), ISBLANK(Email__c))
