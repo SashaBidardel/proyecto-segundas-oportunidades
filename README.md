@@ -99,8 +99,11 @@ DB_NAME=nombre_base_datos
 
 #### **Reglas de Validación:**
 
-    DNI y Email obligatorios en Segunda_Oportunidad__c:
-    AND(ISBLANK(DNI__c), ISBLANK(Email__c))
+* DNI y Email obligatorios en Segunda_Oportunidad__c:
+  * AND(ISBLANK(DNI__c), ISBLANK(Email__c))
+* Venta_a_True_solo_con_Fecha_Venta
+  * Vendido__c = TRUE && ISBLANK(Fecha_Venta__c)
+  
 ### **4.2. Estructura de la base de datos**
 
 ```sql
