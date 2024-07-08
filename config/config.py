@@ -1,11 +1,9 @@
-CONSUMER_KEY = '3MVG9XLfsJ3MQLvx2IhCVoCek5D1NMY_NWZbImKMUl4oVS8BaMlzP5S0d4B0aiCF6VKW3uPwIuQNAhWRtWTNp'
-CONSUMER_SECRET = '78690B72FCE5A8BA5954D02B08E95C5634B50EA62CD7A7BC0A529081D6ADB6FF'
-USERNAME = 'seguridadsocial@salsf.com'
-PASSWORD = 'Sporting3.'
-SECURITY_TOKEN ='WhL9ZYTBmAwmBptEVd8eXfUL'
+USERNAME = your username
+PASSWORD = your pasword
+SECURITY_TOKEN = your security token
 
 # MySQL database credentials
-DB_USER = 'root'
-DB_PASSWORD = ''
-DB_HOST = 'localhost'  
-DB_NAME = 'segundaoportunidad'
+DB_USER = your user
+DB_PASSWORD = your pasword
+DB_HOST = your host 
+DB_NAME = your data base name
